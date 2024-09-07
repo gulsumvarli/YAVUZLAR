@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <div class="x1">
+        <h1>Quiz</h1>
+        <div id="quizPaneli">
+            <h2 id="quizSoruMetni"></h2>
+            <form id="quizFormu">
+                <div>
+                    <input type="radio" name="secenek" id="secenekA_radio" value="A">
+                    <label for="secenekA_radio" id="secenekA_etiketi"></label>
+                </div>
+                <div>
+                    <input type="radio" name="secenek" id="secenekB_radio" value="B">
+                    <label for="secenekB_radio" id="secenekB_etiketi"></label>
+                </div>
+                <div>
+                    <input type="radio" name="secenek" id="secenekC_radio" value="C">
+                    <label for="secenekC_radio" id="secenekC_etiketi"></label>
+                </div>
+                <div>
+                    <input type="radio" name="secenek" id="secenekD_radio" value="D">
+                    <label for="secenekD_radio" id="secenekD_etiketi"></label>
+                </div>
+                <button type="button" id="cevapGonderBtn">Soruyu Gönder</button>
+            </form>
+        </div>
+
+        <div id="quizSonuc" style="display:none;">
+            <h2>Quiz Tamamlandı</h2>
+            <p id="toplamPuan"></p>
+            <button id="anaSayfayaDonBtn" style="display:none;">Ana Sayfaya Dön</button>
+        </div>
+    </div>
+
+    <script src="quiz-script.js"></script>
+</body>
+</html>
