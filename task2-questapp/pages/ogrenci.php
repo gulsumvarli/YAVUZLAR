@@ -3,7 +3,7 @@ include('../utils/db.php');
 include('../utils/functions.php');
 
 checkLogin();
-checkRole('2');
+checkRole(2);
 
 $stmt = $db->prepare("
     SELECT * FROM soru 
