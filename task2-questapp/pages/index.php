@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['rolid'] = $user['rolid'];
 
         
-        if ($user['rolid'] === '3') { //admin id3 ayarladım
+        if ($user['rolid'] == 3) { //admin id3 ayarladım
             header("Location: admin.php");
         } else {
             header("Location: ogrenci.php");
