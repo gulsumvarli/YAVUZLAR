@@ -4,7 +4,7 @@ include('../utils/functions.php');
 
 
 checkLogin();
-checkRole('3');
+checkRole(3);
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['question']) && isset($_POST['dogru_cevap_sikki']) && isset($_POST['a_sikki']) && isset($_POST['b_sikki']) && isset($_POST['c_sikki']) && isset($_POST['d_sikki']) && isset($_POST['zorluk_seviyesi'])) {
     $soru_metni = $_POST['question'];
     $dogru_cevap_sikki = $_POST['dogru_cevap_sikki'];
